@@ -13,10 +13,22 @@ NodeDex-Sim is a Node.js-based simulation of a decentralized exchange (DEX). It 
 To get started with NodeDex-Sim, you need to have Node.js installed on your machine. Once you have Node.js installed, follow these steps:
 
 1. Clone the repository: https://github.com/sunilsimar/NodeDEX-Sim.git
-2. Navigate to the project directory: cd NodeDex-Sim
-3. Install the required dependencies: npm install
-4. Build: npm run build
-5. Start the server: npm run start
+2. Navigate to the project directory: 
+ ```ruby
+ cd NodeDex-Sim
+ ```
+3. Install the required dependencies:
+```ruby
+npm install
+```
+4. Build:
+```ruby
+npm run build
+```
+5. Start the server:
+```ruby
+npm run start
+```
 
 The server will start running on http://localhost:3000.
 
@@ -32,23 +44,27 @@ To buy an asset, send a POST request to `/buy-asset` with the following JSON bod
 {
 "quantity": 10
 }
+```
 
 The server will respond with a message indicating how much USDC you paid for the specified quantity of ETH.
 
-Sell Asset
+### Sell Asset
 To sell an asset, send a POST request to /sell-asset with the following JSON body:
 
+```json
 {
   "quantity": 5
 }
+```
+
 The server will respond with a message indicating how much USDC you got for the specified quantity of ETH.
 
-Disclaimer
+# Disclaimer
 NodeDex-Sim is a simulation tool intended for educational purposes only. It does not connect to any real blockchain or cryptocurrency network and should not be used for actual trading.
 
-Contribution
+# Contribution
 Contributions are welcome! If you have any suggestions or improvements, feel free to fork the repository and submit a pull request.
 
-License
+# License
 NodeDex-Sim is open-source and is licensed under the MIT License.
 
